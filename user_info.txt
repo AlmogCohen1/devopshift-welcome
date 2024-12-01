@@ -1,0 +1,3 @@
+GITBRANCH=jenkins-workshop
+GITURL=github.com/AlmogCohen1/devopshift-welcome.git
+GITUSERNAME=almogcohen1
