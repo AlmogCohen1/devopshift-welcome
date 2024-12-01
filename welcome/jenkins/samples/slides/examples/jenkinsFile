@@ -15,6 +15,15 @@ pipeline {
                 git branch: 'jenkins-workshop', url: 'https://github.com/yanivomc/devopshift-welcome.git'
             }
         }
+         stage('run-parallel-branches') {
+       steps {
+         parallel(
+           a: {
+             echo "Hello World"
+           }
+         )
+       }
+     }
 
         stage('Setup Python Environment and Install Dependencies') {
             steps {
