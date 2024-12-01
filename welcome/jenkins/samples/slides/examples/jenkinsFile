@@ -16,13 +16,13 @@ pipeline {
             }
         }
          stage('run-parallel-branches') {
-       steps {
+  
          parallel(
            a: {
              echo "Hello World"
            }
          )
-       }
+       
      }
 
         stage('Setup Python Environment and Install Dependencies') {
